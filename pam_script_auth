@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sc-auth /usr/share/libpam-script/pam-script.d/pan.hash
+exit $?
