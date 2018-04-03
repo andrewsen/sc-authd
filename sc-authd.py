@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#!/usr/bin/env python3.6
 import hashlib
 import signal
 import sys
