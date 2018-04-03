@@ -1,0 +1,16 @@
+[Unit]
+Description=SmartCard Authentication Service
+After=syslog.target sockets.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+PIDFile=/var/run/sc-authd.pid
+ExecStart=/usr/bin/sc-authd start
+ExecReload=/usr/bin/sc-authd reload
+ExecStop=/usr/bin/sc-authd stop
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
