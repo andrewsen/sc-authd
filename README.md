@@ -4,7 +4,7 @@ Simple SmartCard authentication daemon
 Tested and works only for Mastercard International EMV cards (and it is not certain).
 
 ## Installation
-* Install `libpam-script` package
+* Install `libpam-script` and `pyscard` packages
 * Copy sc-auth.py and sc-auth.py to /usr/bin/
   ```
   $ chmod +x sc-auth.py sc-authd.py
@@ -58,4 +58,5 @@ Tested and works only for Mastercard International EMV cards (and it is not cert
   # and here are more per-package modules (the "Additional" block)
   # end of pam-auth-update config
   ```
-* 
+## Usage
+When your valid card is inserted you can omit password verification. Just press `Enter` instead of writing a password in sudo, pk-exec or login screen.
