@@ -26,8 +26,8 @@ Tested and works only for Mastercard International EMV cards (and it is not cert
   $ chmod +x pam_script_auth
   # cp pam_script_auth /usr/share/libpam-script/
   ```
-* Configure PAM - open `/etc/pam.d/common-auth` and make it looks like this example
-  Main line is `auth    [success=2 default=ignore]	pam_script.so`
+* Configure PAM - open `/etc/pam.d/common-auth` and make it looks like this example.
+  Main line is `auth    [success=2 default=ignore]	pam_script.so`.
   It's highly recommended to read [this](https://www.digitalocean.com/community/tutorials/how-to-use-pam-to-configure-authentication-on-an-ubuntu-12-04-vps) article about PAM configuration.
   ```
   #
